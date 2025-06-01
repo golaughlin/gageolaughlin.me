@@ -3,7 +3,7 @@
 
 @theme {
     --font-sans: 'InterVariable', 'Inter', 'system-ui', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    --font-display: 'InterVariable', 'Inter', 'system-ui', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    --font-display: 'InterVariable', 'InterDisplay', 'Inter', 'system-ui', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
     --font-sans--font-feature-settings: "ss04";
     --font-display--font-feature-settings: "cv11", "ss03";
     --font-display--font-variation-settings: "opsz" 32;
