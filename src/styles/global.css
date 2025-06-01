@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@import url("inter.css");
+
+@theme {
+    --font-sans: 'InterVariable', 'Inter', 'system-ui', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
