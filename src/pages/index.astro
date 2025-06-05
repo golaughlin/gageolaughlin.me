@@ -1,7 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SocialLink from '../components/SocialLink.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout>
-	<h1 class="text-5xl font-display font-bold">Hello, Wisconsin!</h1>
+	<section class="bg-slate-100 py-24 relative overflow-hidden ">
+		<div class="flex justify-between items-center max-w-4xl m-auto">
+			<div>
+				<h1 class="text-4xl font-display font-bold mb-2">Gage O'Laughlin</h1>
+				<p class="text-xl text-slate-800 font-display mb-2">Software Developer</p>
+				<div class="flex flex-col gap-2 items-start">
+					<div class="flex items-center text-sm gap-x-2">
+						<Icon 
+							class="text-red-800" 
+							name="material-symbols:location-on"
+							aria-label="city"
+						/>
+						<span class="text-slate-800">Milwaukee, WI</span>
+					</div>
+					<SocialLink 
+						class="text-green-700" 
+						name="gage.olaughlin@gmail.com" 
+						url="mailto:gage.olaughlin@gmail.com"
+						icon="material-symbols:mail-sharp"
+					/>
+					<SocialLink 
+						class="text-blue-700" 
+						name="LinkedIn" 
+						url="https://www.linkedin.com/in/gageolaughlin/"
+						icon="cib:linkedin"
+					/>
+					<SocialLink 
+						class="text-purple-700" 
+						name="GitHub" 
+						url="https://github.com/golaughlin"
+						icon="cib:github"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
