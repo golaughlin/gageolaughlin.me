@@ -1,7 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SocialLink from '../components/SocialLink.astro';
+import ProfilePic from '../components/ProfilePic.astro';
 import { Icon } from 'astro-icon/components';
+
+import profiePic from '../images/profile_picture.jpg';
 ---
 
 <Layout>
@@ -38,6 +41,9 @@ import { Icon } from 'astro-icon/components';
 						icon="cib:github"
 					/>
 				</div>
+			</div>
+			<div class="order-first md:order-last">
+				<ProfilePic src={profiePic} name="Gage O'Laughlin" />
 			</div>
 		</div>
 	</section>

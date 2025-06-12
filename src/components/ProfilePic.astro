@@ -1,0 +1,7 @@
+---
+import { Image } from "astro:assets";
+
+const { name, src } = Astro.props;
+---
+
+<Image class="w-64 rounded-full drop-shadow-lg" src={src} alt={`Image of ${name}`} />
