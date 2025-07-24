@@ -5,6 +5,8 @@ import ProfilePic from '../components/ProfilePic.astro';
 import { Icon } from 'astro-icon/components';
 
 import profiePic from '../images/profile_picture.jpg';
+import SkillCard from '../components/SkillCard.astro';
+import SkillTag from '../components/SkillTag.astro';
 ---
 
 <Layout>
@@ -51,6 +53,21 @@ import profiePic from '../images/profile_picture.jpg';
 				Experienced and passionate front-end software and <abbr title="user interface">UI</abbr> engineer.
 				Focused on designing and developing applications accessible to both users and <abbr title="artifical intelligence">AI</abbr>.
 			</p>
+		</div>
+	</section>
+	<section class="bg-slate-50 py-6">
+		<div class="max-w-4xl flex flex-col m-auto">
+			<h2 class="text-2xl font-display font-bold mb-2">Skills</h2>
+			<SkillCard title="Programming Languages">
+				<SkillTag skill="TypeScript" />
+				<SkillTag skill="JavaScript" />
+				<SkillTag skill="Python" />
+				<SkillTag skill="PHP" />
+				<SkillTag skill="Swift" />
+				<SkillTag skill="Java" />
+				<SkillTag skill="C#" />
+				<SkillTag skill="Dart" />
+			</SkillCard>
 		</div>
 	</section>
 </Layout>

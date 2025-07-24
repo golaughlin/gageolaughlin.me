@@ -1,0 +1,11 @@
+---
+import Card from "./Card.astro";
+const { title } = Astro.props;
+---
+
+<Card>
+    <h3 class="font-display font-semibold text-xl text-gray-950 mb-2">{title}</h3>
+    <ul class="list-none flex flex-row flex-wrap justify-start items-center gap-2">
+        <slot />
+    </ul>
+</Card>
