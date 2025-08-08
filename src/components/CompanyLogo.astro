@@ -1,0 +1,17 @@
+---
+import Image from "astro/components/Image.astro";
+
+const { name, url, src, width, height } = Astro.props;
+---
+
+<li class="flex items-center justify-center max-w-fit">
+    <a href={url} target="_blank">
+        <Image 
+            src={src} 
+            alt={name}
+            layout="constrained"
+            width={width}
+            height={height}
+        />
+    </a>
+</li>
