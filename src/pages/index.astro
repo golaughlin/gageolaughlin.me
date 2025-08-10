@@ -17,8 +17,8 @@ import aspiritechLogo from '../images/companies/aspiritech-logo.png';
 ---
 
 <Layout>
-	<section class="py-12 relative overflow-hidden" id="top">
-		<div class="flex justify-between items-center max-w-4xl m-auto">
+	<section class="py-12 px-4 relative overflow-hidden md:px-0" id="top">
+		<div class="flex flex-col justify-between items-center gap-y-8 max-w-4xl m-auto md:flex-row md:gap-y-0">
 			<div>
 				<h1 class="text-4xl font-display font-bold mb-2">Gage O'Laughlin</h1>
 				<p class="text-xl text-slate-800 font-display mb-2">Software Developer</p>
@@ -63,8 +63,8 @@ import aspiritechLogo from '../images/companies/aspiritech-logo.png';
 		</div>
 	</section>
 	<section id="skills">
-		<div class="max-w-4xl flex flex-col m-auto py-6 gap-y-4">
-			<h2 class="text-2xl font-display font-bold mb-2">Skills</h2>
+		<div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 md:px-0">
+			<h2 class="text-2xl font-display font-bold mb-2 text-center md:text-left">Skills</h2>
 			<SkillCard title="Programming Languages">
 				<SkillTag skill="TypeScript" />
 				<SkillTag skill="JavaScript" />
@@ -117,8 +117,8 @@ import aspiritechLogo from '../images/companies/aspiritech-logo.png';
 		</div>
 	</section>
 	<section id="experience">
-		<div class="max-w-4xl flex flex-col m-auto py-6 gap-y-4">
-			<h2 class="text-2xl font-display font-bold mb-2">Experience</h2>
+		<div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 md:px-0">
+			<h2 class="text-2xl font-display font-bold mb-2 text-center md:text-left">Experience</h2>
 			<Card>
 				<h3 class="text-xl text-center font-display font-bold mb-2 md:text-start">Companies I have worked for</h3>
 				<ul class="list-none flex flex-col flex-wrap gap-8 items-center justify-center md:flex-row md:justify-start">
@@ -158,6 +158,34 @@ import aspiritechLogo from '../images/companies/aspiritech-logo.png';
 						height="46"
 					/>
 				</ul>
+			</Card>
+		</div>
+	</section>
+	<section id="awards">
+		<div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 md:px-0">
+			<h2 class="text-2xl font-display font-bold text-center md:text-left">Awards</h2>
+			<Card>
+				<div class="flex flex-col items-center justify-center gap-y-2 md:items-start">
+					<h3 class="text-xl text-center font-display font-bold md:text-start">
+						Web Development Specialist Award
+					</h3>
+					<dl class="flex flex-col">
+						<div class="flex items-center justify-start gap-2">
+							<dt class="text-lg">
+								<span class="sr-only">Year</span>
+								<span>🗓️</span>
+							</dt>
+							<dd class="font-light text-slate-700">2019</dd>
+						</div>
+						<div class="flex items-center justify-start gap-2">
+							<dt class="text-lg">
+								<span class="sr-only">School</span>
+								<span>🎓</span>
+							</dt>
+							<dd class="font-light text-slate-700">University of Wisconsin - Whitewater</dd>
+						</div>
+					</dl>
+				</div>
 			</Card>
 		</div>
 	</section>
