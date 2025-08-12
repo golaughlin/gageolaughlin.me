@@ -4,14 +4,14 @@ import NavLink from "./NavLink.astro";
 import Logo from "../assets/logo.svg";
 ---
 
-<header class="bg-white w-full sticky">
+<header class="bg-gradient-to-b from-slate-100 to-slate-200 border-b border-slate-200 shadow-xs shadow-slate-400 w-full sticky">
     <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
         <div class="flex justify-start items-center space-x-2">
             <Logo class="h-8" />
-            <span class="flex-auto text-lg text-black font-display font-medium">Gage O'Laughlin</span>
+            <span class="flex-auto text-lg text-slate-900 font-display font-medium">Gage O'Laughlin</span>
         </div>
         <nav>
-            <ul class="flex flex-auto justify-center items-center space-x-6">
+            <ul class="flex flex-auto justify-center items-center">
                 <NavLink title="Skills" url="#skills" />
                 <NavLink title="Experience" url="#experience" />
                 <NavLink title="Awards" url="#awards" />
@@ -19,7 +19,9 @@ import Logo from "../assets/logo.svg";
             </ul>
         </nav>
         <div class="flex justify-end items-center">
-            <Icon class="text-xl" name="material-symbols:dark-mode" />
+            <div class="p-2 border border-slate-400 rounded-sm shadow-xs shadow-slate-300 hover:cursor-pointer hover:shadow-inner hover:bg-gradient-to-b hover:from-slate-200 hover:to-slate-300">
+                <Icon class="text-xl text-slate-900" name="material-symbols:dark-mode" />
+            </div>
         </div>
     </div>
 </header>
