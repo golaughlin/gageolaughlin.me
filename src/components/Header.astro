@@ -10,7 +10,7 @@ import Logo from "../assets/logo.svg";
             <Logo class="h-8" />
             <span class="flex-auto text-lg text-slate-900 font-display font-medium">Gage O'Laughlin</span>
         </div>
-        <nav>
+        <nav class="hidden md:block">
             <ul class="flex flex-auto justify-center items-center">
                 <NavLink title="Skills" url="#skills" />
                 <NavLink title="Experience" url="#experience" />
@@ -19,7 +19,7 @@ import Logo from "../assets/logo.svg";
             </ul>
         </nav>
         <div class="flex justify-end items-center">
-            <div class="p-2 border border-slate-400 rounded-sm shadow-xs shadow-slate-300 hover:cursor-pointer hover:shadow-inner hover:bg-gradient-to-b hover:from-slate-200 hover:to-slate-300">
+            <div class="p-2 bg-gradient-to-b from-slate-200 to-slate-300 border border-slate-300 rounded-sm inset-shadow-xs shadow-slate-400 hover:cursor-pointer hover:shadow-inner hover:shadow-slate-300 hover:bg-gradient-to-b hover:from-slate-200 hover:to-slate-300">
                 <Icon class="text-xl text-slate-900" name="material-symbols:dark-mode" />
             </div>
         </div>
