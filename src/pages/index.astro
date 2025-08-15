@@ -1,230 +1,265 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SocialLink from '../components/SocialLink.astro';
-import ProfilePic from '../components/ProfilePic.astro';
-import { Icon } from 'astro-icon/components';
-import SkillCard from '../components/SkillCard.astro';
-import SkillTag from '../components/SkillTag.astro';
-import Card from '../components/Card.astro';
-import CompanyLogo from '../components/CompanyLogo.astro';
-import Subheader from '../components/Subheader.astro';
+import Layout from "../layouts/Layout.astro";
+import SocialLink from "../components/SocialLink.astro";
+import ProfilePic from "../components/ProfilePic.astro";
+import { Icon } from "astro-icon/components";
+import SkillCard from "../components/SkillCard.astro";
+import SkillTag from "../components/SkillTag.astro";
+import Card from "../components/Card.astro";
+import CompanyLogo from "../components/CompanyLogo.astro";
+import Subheader from "../components/Subheader.astro";
 
-import profiePic from '../images/profile_picture.jpg';
-import ictectLogo from '../images/companies/ictect-logo.png';
-import code312Logo from '../images/companies/code312-logo.png';
-import aanLogo from '../images/companies/aan-logo.svg';
-import foremostMediaLogo from '../images/companies/foremostmedia-logo.png';
-import aspiritechLogo from '../images/companies/aspiritech-logo.png';
+import profiePic from "../images/profile_picture.jpg";
+import ictectLogo from "../images/companies/ictect-logo.png";
+import code312Logo from "../images/companies/code312-logo.png";
+import aanLogo from "../images/companies/aan-logo.svg";
+import foremostMediaLogo from "../images/companies/foremostmedia-logo.png";
+import aspiritechLogo from "../images/companies/aspiritech-logo.png";
 ---
 
 <Layout>
-	<section class="py-12 px-4 relative overflow-hidden lg:px-0" id="top">
-		<div class="flex flex-col justify-between items-center gap-y-8 max-w-4xl m-auto md:flex-row md:gap-y-0">
-			<div>
-				<h1 class="text-4xl text-slate-900 font-display font-bold mb-2
-							dark:text-slate-100">Gage O'Laughlin</h1>
-				<p class="text-xl text-slate-800 font-display mb-2
-							dark:text-slate-200">Software Developer</p>
-				<div class="flex flex-col gap-2 items-start">
-					<div class="flex items-center text-sm gap-x-2">
-						<Icon 
-							class="text-red-800 dark:text-red-600" 
-							name="material-symbols:location-on"
-							aria-label="city"
-						/>
-						<span class="text-slate-800 dark:text-slate-200">Milwaukee, WI</span>
-					</div>
-					<SocialLink 
-						class="text-green-700 dark:text-green-500" 
-						name="gage.olaughlin@gmail.com" 
-						url="mailto:gage.olaughlin@gmail.com"
-						icon="material-symbols:mail-sharp"
-					/>
-					<SocialLink 
-						class="text-blue-700 dark:text-blue-500" 
-						name="LinkedIn" 
-						url="https://www.linkedin.com/in/gageolaughlin/"
-						icon="cib:linkedin"
-					/>
-					<SocialLink 
-						class="text-purple-700 dark:text-purple-500" 
-						name="GitHub" 
-						url="https://github.com/golaughlin"
-						icon="cib:github"
-					/>
-				</div>
-			</div>
-			<div class="order-first md:order-last">
-				<ProfilePic src={profiePic} name="Gage O'Laughlin" />
-			</div>
-		</div>
-		<div class="max-w-4xl m-auto flex items-center justify-center mt-8">
-			<Card>
-				<p class="text-slate-900 dark:text-slate-100">
-					Experienced and passionate front-end software and <abbr title="user interface">UI</abbr> engineer.
-					Focused on designing and developing applications accessible to both users and <abbr title="artifical intelligence">AI</abbr>.
-				</p>
-			</Card>
-		</div>
-	</section>
-	<section id="skills">
-		<div class="max-w-4xl flex flex-col m-auto px-4 pb-6 gap-y-4 lg:px-0">
-			<Subheader text="Skills" />
-			<SkillCard title="Programming Languages">
-				<SkillTag skill="TypeScript" />
-				<SkillTag skill="JavaScript" />
-				<SkillTag skill="Python" />
-				<SkillTag skill="PHP" />
-				<SkillTag skill="Swift" />
-				<SkillTag skill="Java" />
-				<SkillTag skill="C#" />
-				<SkillTag skill="Dart" />
-			</SkillCard>
-			<SkillCard title="Frontend Development">
-				<SkillTag skill="React" />
-				<SkillTag skill="Angular" />
-				<SkillTag skill="Vue" />
-				<SkillTag skill="Svelte" />
-				<SkillTag skill="Next.js" />
-				<SkillTag skill="Nuxt" />
-				<SkillTag skill="Astro" />
-				<SkillTag skill="Tailwind" />
-				<SkillTag skill="SwiftUI" />
-				<SkillTag skill="Flutter" />
-			</SkillCard>
-			<SkillCard title="Backend Developement">
-				<SkillTag skill="Nodejs" />
-				<SkillTag skill="Deno" />
-				<SkillTag skill="Express.js" />
-				<SkillTag skill="Hono.js" />
-				<SkillTag skill="Django" />
-				<SkillTag skill="Flask" />
-				<SkillTag skill="Laravel" />
-				<SkillTag skill="WordPress" />
-				<SkillTag skill="ASP.NET" />
-			</SkillCard>
-			<SkillCard title="Database & Storage">
-				<SkillTag skill="PostgreSQL" />
-				<SkillTag skill="MySQL" />
-				<SkillTag skill="SQLite" />
-				<SkillTag skill="Drizzle (ORM)" />
-				<SkillTag skill="SQLAlchemy" />
-			</SkillCard>
-			<SkillCard title="Cloud & DevOps">
-				<SkillTag skill="AWS" />
-				<SkillTag skill="Azure" />
-				<SkillTag skill="DigitalOcean" />
-				<SkillTag skill="Vercel" />
-				<SkillTag skill="CloudFlare Pages" />
-				<SkillTag skill="GitHub" />
-				<SkillTag skill="GitLab" />
-			</SkillCard>
-		</div>
-	</section>
-	<section id="experience">
-		<div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 lg:px-0">
-			<Subheader text="Experience" />
-			<Card>
-				<h3 class="font-display font-bold text-xl text-center text-slate-900 mb-2 
-						md:text-start dark:text-slate-100">Companies I have worked for</h3>
-				<ul class="list-none flex flex-col flex-wrap gap-8 items-center justify-center md:flex-row md:justify-start">
-					<CompanyLogo 
-						name="Ictect" 
-						src={ictectLogo} 
-						url="https://www.ictect.com/"
-						width="108"
-						height="59"
-					/>
-					<CompanyLogo 
-						name="Code 312"
-						src={code312Logo}
-						url="https://code312.org/"
-						width="75"
-						height="75"
-					/>
-					<CompanyLogo 
-						name="All Auto Network" 
-						src={aanLogo} 
-						url="https://www.allautonetwork.com/"
-						width="149"
-						height="51"
-					/>
-					<CompanyLogo 
-						name="Foremost Media"
-						src={foremostMediaLogo}
-						url="https://www.foremostmedia.com/"
-						width="150"
-						height="75"
-					/>
-					<CompanyLogo
-						name="Aspiritech" 
-						src={aspiritechLogo}
-						url="https://aspiritech.org/"
-						width="140"
-						height="46"
-					/>
-				</ul>
-			</Card>
-		</div>
-	</section>
-	<section id="awards">
-		<div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 lg:px-0">
-			<Subheader text="Awards" />
-			<Card>
-				<div class="flex flex-col items-start justify-center gap-y-2">
-					<h3 class="text-xl text-slate-900 font-display font-bold dark:text-slate-100">
-						Web Development Specialist Award
-					</h3>
-					<dl class="flex flex-col items-start justify-center">
-						<div class="flex items-start justify-start gap-2">
-							<dt class="text-lg">
-								<span class="sr-only">Year</span>
-								<span>🗓️</span>
-							</dt>
-							<dd class="font-light text-slate-700 dark:text-slate-200">2019</dd>
-						</div>
-						<div class="flex items-start justify-start gap-2">
-							<dt class="text-lg">
-								<span class="sr-only">School</span>
-								<span>🏫</span>
-							</dt>
-							<dd class="font-light text-slate-700 dark:text-slate-200">University of Wisconsin - Whitewater</dd>
-						</div>
-					</dl>
-				</div>
-			</Card>
-		</div>
-	</section>
-	<section id="education">
-		<div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 lg:px-0">
-			<Subheader text="Education" />
-			<Card>
-				<div class="flex flex-col items-start justify-center gap-y-2">
-					<dl class="flex flex-col items-start justify-center">
-						<div class="flex items-start justify-start gap-2">
-							<dt class="text-lg">
-								<span class="sr-only">Degree</span>
-								<span>🎓</span>
-							</dt>
-							<dd class="font-display font-bold text-lg text-slate-900 dark:text-slate-100">Bachelors of Science - Computer Science</dd>
-						</div>
-						<div class="flex items-start justify-start gap-2">
-							<dt class="text-base">
-								<span class="sr-only">School</span>
-								<span>🏫</span>
-							</dt>
-							<dd class="font-light text-base text-slate-700 dark:text-slate-200">University of Wisconsin - Whitewater</dd>
-						</div>
-						<div class="flex items-start justify-start gap-2">
-							<dt class="text-base">
-								<span class="sr-only">Years Attended</span>
-								<span>🗓️</span>
-							</dt>
-							<dd class="font-light text-base text-slate-700 dark:text-slate-200">July 2014 - May 2019</dd>
-						</div>
-					</dl>
-				</div>
-			</Card>
-		</div>
-	</section>
+  <section class="py-12 px-4 relative overflow-hidden lg:px-0" id="top">
+    <div
+      class="flex flex-col justify-between items-center gap-y-8 max-w-4xl m-auto md:flex-row md:gap-y-0"
+    >
+      <div>
+        <h1
+          class="text-4xl text-slate-900 font-display font-bold mb-2
+							dark:text-slate-100"
+        >
+          Gage O'Laughlin
+        </h1>
+        <p class="text-xl text-slate-800 font-display mb-2
+							dark:text-slate-200">
+          Software Developer
+        </p>
+        <div class="flex flex-col gap-2 items-start">
+          <div class="flex items-center text-sm gap-x-2">
+            <Icon
+              class="text-red-800 dark:text-red-600"
+              name="material-symbols:location-on"
+              aria-label="city"
+            />
+            <span class="text-slate-800 dark:text-slate-200">Milwaukee, WI</span
+            >
+          </div>
+          <SocialLink
+            class="text-green-700 dark:text-green-500"
+            name="gage.olaughlin@gmail.com"
+            url="mailto:gage.olaughlin@gmail.com"
+            icon="material-symbols:mail-sharp"
+          />
+          <SocialLink
+            class="text-blue-700 dark:text-blue-500"
+            name="LinkedIn"
+            url="https://www.linkedin.com/in/gageolaughlin/"
+            icon="cib:linkedin"
+          />
+          <SocialLink
+            class="text-purple-700 dark:text-purple-500"
+            name="GitHub"
+            url="https://github.com/golaughlin"
+            icon="cib:github"
+          />
+        </div>
+      </div>
+      <div class="order-first md:order-last">
+        <ProfilePic src={profiePic} name="Gage O'Laughlin" />
+      </div>
+    </div>
+    <div class="max-w-4xl m-auto flex items-center justify-center mt-8">
+      <Card>
+        <p class="text-slate-900 dark:text-slate-100">
+          Experienced and passionate front-end software and <abbr
+            title="user interface">UI</abbr
+          > engineer. Focused on designing and developing applications accessible
+          to both users and <abbr title="artifical intelligence">AI</abbr>.
+        </p>
+      </Card>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="max-w-4xl flex flex-col m-auto px-4 pb-6 gap-y-4 lg:px-0">
+      <Subheader text="Skills" />
+      <SkillCard title="Programming Languages">
+        <SkillTag skill="TypeScript" />
+        <SkillTag skill="JavaScript" />
+        <SkillTag skill="Python" />
+        <SkillTag skill="PHP" />
+        <SkillTag skill="Swift" />
+        <SkillTag skill="Java" />
+        <SkillTag skill="C#" />
+        <SkillTag skill="Dart" />
+      </SkillCard>
+      <SkillCard title="Frontend Development">
+        <SkillTag skill="React" />
+        <SkillTag skill="Angular" />
+        <SkillTag skill="Vue" />
+        <SkillTag skill="Svelte" />
+        <SkillTag skill="Next.js" />
+        <SkillTag skill="Nuxt" />
+        <SkillTag skill="Astro" />
+        <SkillTag skill="Tailwind" />
+        <SkillTag skill="SwiftUI" />
+        <SkillTag skill="Flutter" />
+      </SkillCard>
+      <SkillCard title="Backend Developement">
+        <SkillTag skill="Nodejs" />
+        <SkillTag skill="Deno" />
+        <SkillTag skill="Express.js" />
+        <SkillTag skill="Hono.js" />
+        <SkillTag skill="Django" />
+        <SkillTag skill="Flask" />
+        <SkillTag skill="Laravel" />
+        <SkillTag skill="WordPress" />
+        <SkillTag skill="ASP.NET" />
+      </SkillCard>
+      <SkillCard title="Database & Storage">
+        <SkillTag skill="PostgreSQL" />
+        <SkillTag skill="MySQL" />
+        <SkillTag skill="SQLite" />
+        <SkillTag skill="Drizzle (ORM)" />
+        <SkillTag skill="SQLAlchemy" />
+      </SkillCard>
+      <SkillCard title="Cloud & DevOps">
+        <SkillTag skill="AWS" />
+        <SkillTag skill="Azure" />
+        <SkillTag skill="DigitalOcean" />
+        <SkillTag skill="Vercel" />
+        <SkillTag skill="CloudFlare Pages" />
+        <SkillTag skill="GitHub" />
+        <SkillTag skill="GitLab" />
+      </SkillCard>
+    </div>
+  </section>
+  <section id="experience">
+    <div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 lg:px-0">
+      <Subheader text="Experience" />
+      <Card>
+        <h3
+          class="font-display font-bold text-xl text-center text-slate-900 mb-2
+						md:text-start dark:text-slate-100"
+        >
+          Companies I have worked for
+        </h3>
+        <ul
+          class="list-none flex flex-col flex-wrap gap-8 items-center justify-center md:flex-row md:justify-start"
+        >
+          <CompanyLogo
+            name="Ictect"
+            src={ictectLogo}
+            url="https://www.ictect.com/"
+            width="108"
+            height="59"
+          />
+          <CompanyLogo
+            name="Code 312"
+            src={code312Logo}
+            url="https://code312.org/"
+            width="75"
+            height="75"
+          />
+          <CompanyLogo
+            name="All Auto Network"
+            src={aanLogo}
+            url="https://www.allautonetwork.com/"
+            width="149"
+            height="51"
+          />
+          <CompanyLogo
+            name="Foremost Media"
+            src={foremostMediaLogo}
+            url="https://www.foremostmedia.com/"
+            width="150"
+            height="75"
+          />
+          <CompanyLogo
+            name="Aspiritech"
+            src={aspiritechLogo}
+            url="https://aspiritech.org/"
+            width="140"
+            height="46"
+          />
+        </ul>
+      </Card>
+    </div>
+  </section>
+  <section id="awards">
+    <div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 lg:px-0">
+      <Subheader text="Awards" />
+      <Card>
+        <div class="flex flex-col items-start justify-center gap-y-2">
+          <h3
+            class="text-xl text-slate-900 font-display font-bold dark:text-slate-100"
+          >
+            Web Development Specialist Award
+          </h3>
+          <dl class="flex flex-col items-start justify-center">
+            <div class="flex items-start justify-start gap-2">
+              <dt class="text-lg">
+                <span class="sr-only">Year</span>
+                <span>🗓️</span>
+              </dt>
+              <dd class="font-light text-slate-700 dark:text-slate-200">
+                2019
+              </dd>
+            </div>
+            <div class="flex items-start justify-start gap-2">
+              <dt class="text-lg">
+                <span class="sr-only">School</span>
+                <span>🏫</span>
+              </dt>
+              <dd class="font-light text-slate-700 dark:text-slate-200">
+                University of Wisconsin - Whitewater
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </Card>
+    </div>
+  </section>
+  <section id="education">
+    <div class="max-w-4xl flex flex-col m-auto px-4 py-6 gap-y-4 lg:px-0">
+      <Subheader text="Education" />
+      <Card>
+        <div class="flex flex-col items-start justify-center gap-y-2">
+          <dl class="flex flex-col items-start justify-center">
+            <div class="flex items-start justify-start gap-2">
+              <dt class="text-lg">
+                <span class="sr-only">Degree</span>
+                <span>🎓</span>
+              </dt>
+              <dd
+                class="font-display font-bold text-lg text-slate-900 dark:text-slate-100"
+              >
+                Bachelors of Science - Computer Science
+              </dd>
+            </div>
+            <div class="flex items-start justify-start gap-2">
+              <dt class="text-base">
+                <span class="sr-only">School</span>
+                <span>🏫</span>
+              </dt>
+              <dd
+                class="font-light text-base text-slate-700 dark:text-slate-200"
+              >
+                University of Wisconsin - Whitewater
+              </dd>
+            </div>
+            <div class="flex items-start justify-start gap-2">
+              <dt class="text-base">
+                <span class="sr-only">Years Attended</span>
+                <span>🗓️</span>
+              </dt>
+              <dd
+                class="font-light text-base text-slate-700 dark:text-slate-200"
+              >
+                July 2014 - May 2019
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </Card>
+    </div>
+  </section>
 </Layout>
