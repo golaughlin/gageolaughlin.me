@@ -27,23 +27,23 @@
     
 </script>
 
-<div class="flex items-center justify-center gap-8" aria-live="polite">
+<div class="flex items-center justify-center gap-6 lg:gap-8" aria-live="polite">
     {#if distance > 0}
         <div class="flex flex-col items-center justify-center gap-2">
             <div class="font-medium text-sm text-center uppercase">Days</div>
-            <div class="font-extrabold text-center text-7xl tabular-nums">{days}</div>
+            <div class="font-extrabold text-center text-4xl lg:text-7xl tabular-nums">{days}</div>
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
             <div class="font-medium text-sm text-center uppercase">Hours</div>
-            <div class="font-extrabold text-center text-7xl tabular-nums">{hours}</div>
+            <div class="font-extrabold text-center text-4xl lg:text-7xl tabular-nums">{hours}</div>
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
             <div class="font-medium text-sm text-center uppercase">Minutes</div>
-            <div class="font-extrabold text-center text-7xl tabular-nums">{minutes}</div>
+            <div class="font-extrabold text-center text-4xl lg:text-7xl tabular-nums">{minutes}</div>
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
             <div class="font-medium text-sm text-center uppercase">Seconds</div>
-            <div class="font-extrabold text-center text-7xl tabular-nums">{seconds}</div>
+            <div class="font-extrabold text-center text-4xl lg:text-7xl tabular-nums">{seconds}</div>
         </div>
     {:else}
         <div class="flex flex-col items-center justify-center">

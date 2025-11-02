@@ -12,9 +12,16 @@ import Countdown from "../components/Countdown.svelte";
     <title>MLB Lockout Countdown</title>
   </head>
   <body class="min-h-screen min-w-screen bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-    <main class="flex flex-col items-center justify-center gap-4">
+    <main class="flex flex-col items-center justify-center gap-4 p-1 lg:p-0">
       <h1 class="font-bold font-display text-center text-4xl">Countdown to the start of the MLB Lockout (after the 2026 season)</h1>
       <Countdown client:load />
     </main>
+    <footer class="fixed bottom-0 left-0 p-1">
+      <p class="font-light text-xs text-center">
+        Created by <a class="text-blue-700 underline" href="/" target="_blank">Gage O'Laughlin</a> using 
+        <a class="text-blue-700 underline" href="https://astro.build/" target="_blank">Astro</a> and
+        <a class="text-blue-700 underline" href="https://svelte.dev/" target="_blank">Svelte</a>
+      </p>
+    </footer>
   </body>
 </html>
