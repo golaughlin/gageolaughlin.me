@@ -1,0 +1,20 @@
+---
+import "../styles/global.css";
+import Countdown from "../components/Countdown.svelte";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>MLB Lockout Countdown</title>
+  </head>
+  <body class="min-h-screen min-w-screen bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+    <main class="flex flex-col items-center justify-center gap-4">
+      <h1 class="font-bold font-display text-center text-4xl">Countdown to the start of the MLB Lockout (after the 2026 season)</h1>
+      <Countdown client:load />
+    </main>
+  </body>
+</html>

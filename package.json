@@ -9,13 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/svelte": "^7.2.1",
     "@iconify-json/cib": "^1.2.2",
     "@iconify-json/material-symbols": "^1.2.23",
     "@iconify-json/simple-icons": "^1.2.37",
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.8.1",
     "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.1.8"
+    "svelte": "^5.43.2",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "wrangler": "^4.30.0"
