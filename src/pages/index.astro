@@ -15,6 +15,8 @@ import code312Logo from "../images/companies/code312-logo.png";
 import aanLogo from "../images/companies/aan-logo.svg";
 import foremostMediaLogo from "../images/companies/foremostmedia-logo.png";
 import aspiritechLogo from "../images/companies/aspiritech-logo.png";
+import SkillSubtitle from "../components/SkillSubtitle.astro";
+import SkillCardSection from "../components/SkillCardSection.astro";
 ---
 
 <Layout>
@@ -31,7 +33,7 @@ import aspiritechLogo from "../images/companies/aspiritech-logo.png";
         </h1>
         <p class="text-xl text-slate-800 font-display mb-2
 							dark:text-slate-200">
-          Software Developer
+          Full-Stack Software Developer
         </p>
         <div class="flex flex-col gap-2 items-start">
           <div class="flex items-center text-sm gap-x-2">
@@ -82,60 +84,77 @@ import aspiritechLogo from "../images/companies/aspiritech-logo.png";
     <div class="max-w-4xl flex flex-col m-auto px-4 pb-6 gap-y-4 lg:px-0">
       <Subheader text="Skills" />
       <SkillCard title="Artifical Intelligence (AI) and Large Language Models (LLMs)">
-        <SkillTag skill="Anthropic Claude" />
-        <SkillTag skill="OpenAI ChatGPT" />
-        <SkillTag skill="Microsoft Copilot" />
+        <SkillCardSection>
+          <SkillTag skill="Anthropic Claude" />
+          <SkillTag skill="OpenAI ChatGPT" />
+          <SkillTag skill="Microsoft Copilot" />
+        </SkillCardSection>
       </SkillCard>
       <SkillCard title="Programming Languages">
-        <SkillTag skill="TypeScript" />
-        <SkillTag skill="JavaScript" />
-        <SkillTag skill="Python" />
-        <SkillTag skill="PHP" />
-        <SkillTag skill="Swift" />
-        <SkillTag skill="Java" />
-        <SkillTag skill="C#" />
-        <SkillTag skill="Dart" />
-        <SkillTag skill="Ruby" />
+        <SkillSubtitle subtitle="Expert-level Langauges" />
+        <SkillCardSection>
+          <SkillTag skill="TypeScript" />
+          <SkillTag skill="JavaScript" />
+          <SkillTag skill="PHP" />
+        </SkillCardSection>
+
+        <SkillSubtitle subtitle="Other Languages" />
+        <SkillCardSection>
+          <SkillTag skill="Python" />
+          <SkillTag skill="Swift" />
+          <SkillTag skill="Java" />
+          <SkillTag skill="C#" />
+          <SkillTag skill="Dart" />
+          <SkillTag skill="Ruby" />
+        </SkillCardSection>
       </SkillCard>
       <SkillCard title="Frontend Development">
-        <SkillTag skill="React" />
-        <SkillTag skill="Angular" />
-        <SkillTag skill="Vue" />
-        <SkillTag skill="Svelte" />
-        <SkillTag skill="Next.js" />
-        <SkillTag skill="Nuxt" />
-        <SkillTag skill="Astro" />
-        <SkillTag skill="Tailwind" />
-        <SkillTag skill="SwiftUI" />
-        <SkillTag skill="Flutter" />
+        <SkillCardSection>
+          <SkillTag skill="React" />
+          <SkillTag skill="Angular" />
+          <SkillTag skill="Vue" />
+          <SkillTag skill="Svelte" />
+          <SkillTag skill="Next.js" />
+          <SkillTag skill="Nuxt" />
+          <SkillTag skill="Astro" />
+          <SkillTag skill="Tailwind" />
+          <SkillTag skill="SwiftUI" />
+          <SkillTag skill="Flutter" />
+        </SkillCardSection>
       </SkillCard>
       <SkillCard title="Backend Developement">
-        <SkillTag skill="Nodejs" />
-        <SkillTag skill="Deno" />
-        <SkillTag skill="Express.js" />
-        <SkillTag skill="Hono.js" />
-        <SkillTag skill="Django" />
-        <SkillTag skill="Flask" />
-        <SkillTag skill="Laravel" />
-        <SkillTag skill="WordPress" />
-        <SkillTag skill="ASP.NET" />
-        <SkillTag skill="Rails" />
+        <SkillCardSection>
+          <SkillTag skill="Nodejs" />
+          <SkillTag skill="Deno" />
+          <SkillTag skill="Express.js" />
+          <SkillTag skill="Hono.js" />
+          <SkillTag skill="Django" />
+          <SkillTag skill="Flask" />
+          <SkillTag skill="Laravel" />
+          <SkillTag skill="WordPress" />
+          <SkillTag skill="ASP.NET" />
+          <SkillTag skill="Rails" />
+        </SkillCardSection>
       </SkillCard>
       <SkillCard title="Database & Storage">
-        <SkillTag skill="PostgreSQL" />
-        <SkillTag skill="MySQL" />
-        <SkillTag skill="SQLite" />
-        <SkillTag skill="Drizzle (ORM)" />
-        <SkillTag skill="SQLAlchemy" />
+        <SkillCardSection>
+           <SkillTag skill="PostgreSQL" />
+          <SkillTag skill="MySQL" />
+          <SkillTag skill="SQLite" />
+          <SkillTag skill="Drizzle (ORM)" />
+          <SkillTag skill="SQLAlchemy" />
+        </SkillCardSection>
       </SkillCard>
       <SkillCard title="Cloud & DevOps">
-        <SkillTag skill="AWS" />
-        <SkillTag skill="Azure" />
-        <SkillTag skill="DigitalOcean" />
-        <SkillTag skill="Vercel" />
-        <SkillTag skill="CloudFlare Pages" />
-        <SkillTag skill="GitHub" />
-        <SkillTag skill="GitLab" />
+        <SkillCardSection>
+          <SkillTag skill="AWS" />
+          <SkillTag skill="Azure" />
+          <SkillTag skill="DigitalOcean" />
+          <SkillTag skill="Vercel" />
+          <SkillTag skill="CloudFlare Pages" />
+          <SkillTag skill="GitHub" />
+          <SkillTag skill="GitLab" />
+        </SkillCardSection>
       </SkillCard>
     </div>
   </section>
